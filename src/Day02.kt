@@ -5,9 +5,7 @@ fun main() {
             val range = IntRange(line.indexOf(GAME_ID_DELIMITER), line.length)
             if (isPossibleGame(line.substring(range.first + 1, range.last))) {
                 line.substring("Game ".length, range.first).toInt()
-            } else {
-                0
-            }
+            } else 0
         }
     }
 
